@@ -29,7 +29,7 @@ namespace esphome
       ASSERT_SETUP(xTaskCreate(
           (TaskFunction_t)this->receiver_task,
           "radio_recv",
-          3 * 1024,
+          8 * 1024,
           this,
           2,
           &(this->receiver_task_handle_)));
