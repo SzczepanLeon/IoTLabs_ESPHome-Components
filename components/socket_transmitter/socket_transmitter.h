@@ -40,7 +40,7 @@ namespace esphome
 
             TEMPLATABLE_VALUE(StrOrVector, data)
 
-            void play(Ts... x) override
+            void play(const Ts &...x) override
             {
                 this->parent_->send(this->data_.value(x...));
             }
